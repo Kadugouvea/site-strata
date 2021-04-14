@@ -1,0 +1,151 @@
+/*Curso HTML5, CSS e JS*/
+/*-----------PRINCIPAIS--------------------------------------------------------------------*/
+body{font-family: 'Roboto', sans-serif; font-weight: 400; color: rgb(129, 129, 129);}
+span{display: block;}
+i{font-size: 1.5em;}
+header footer a{margin-right: 10px;}
+a{text-decoration: none;}
+h1, h2, h3, h4, h5, h6{font-weight: 400; color: rgb(82, 82, 82);}
+p, ul, li, table{color: rgb(139, 139, 139); font-weight: 300;}
+li{line-height: 1.5em;}
+img{max-width: 100%;}
+p{font-size: 1.2em; margin-bottom: 3%;}
+input, label, textarea{display: inline-block; width: 100%; box-sizing: border-box; }
+input, textarea{padding: 5% 2%; box-sizing: border-box; border:1px solid rgb(228, 228, 228); border-radius: 10px; background-color: rgb(236, 236, 236);color: rgb(93, 93, 93);}
+select{padding: 2%; border:1px solid rgb(228, 228, 228); border-radius: 10px; background-color: rgb(236, 236, 236); color: rgb(93, 93, 93); }
+label{margin: 3% 0 2% 0;}
+
+/*-----sistema de GRID-----//////////////////////////////////////////////////////////////////////////////////////***/
+.row{overflow: auto; box-sizing: border-box;}
+.col-1{width: 98.5%; clear: both; margin-top: 30px;}
+.col-2{width: 48.5%; float: left;}
+.col-2:first-child{margin-right: 1.5%;}
+.col-2:last-child{margin-left: 1.5%;}
+.col-2-3{width: 65%; float: left; } 
+.col-1-3{width: 32%; float: left; margin-left: 3%;}
+
+
+/*-----------HEADER + MAIN-HEADER--------------------------------------------------------------------*/
+.main-header{position: fixed; top: 0; left: 0; height: 100%; width: 35%; background-image: url(../img/overlay.png), url(../img/bg.jpg); background-position: left top; background-size: cover; padding: 8% 5%; box-sizing: border-box;text-align: right;}
+.main-header img{border-radius: 100%;}
+.main-header h1{font-size: 1.8em; font-weight: 300; color: rgb(255, 255, 255);}
+.main-header strong{color: rgb(213, 251, 0);}
+.span-ret{font-size: .7em; margin-top: 5%;}
+.main-header a{color: rgb(255, 255, 255);}
+.main-header a:visited{color: rgb(255, 255, 255);}
+.main-header a:hover{color: rgb(202, 202, 202);}
+
+.contacts{position: absolute; bottom: 5%; right: 15%;}
+.contacts a{margin-right:10px; transition: .5s;}
+.contacts a:hover{color: rgb(213, 251, 0);}
+
+
+/*-----------------MAIN-CONTENT + SEC-MAIN + SEC1 + BTN-MAIN---------------------------------------------- ----*/
+.main-content{margin-left: 35%; width: 65%; padding: 7% 5%; box-sizing: border-box;}
+.sec-main{max-width: 100%; width: 100%; margin-top: 5%; clear: both;}
+.sec1 h1{margin-bottom: 3%;}
+.sec1 p{text-indent: 5%; text-align: justify; line-height: 1.8em;}
+
+.btn-main{display: inline-block; padding: 2% 3%; border: 2px solid rgb(187, 187, 187); border-radius: 10px; color: rgb(187, 187, 187); transition: .6s;}
+.btn-main:hover{color: rgb(124, 146, 0); border-color:rgb(124, 146, 0);}
+
+
+/*---------------RECENT WORKS - SEC2--------------------------------------------------------------------------*/
+
+.imgworks{width: 50%; float: left; overflow: auto; box-sizing: border-box; padding: 3% 3% 3% 0; position: relative;}
+.imgworks img{width: 100%; border-radius: 20px; position: relative;}
+.wbtn:hover{background-color:rgb(124, 146, 0); color: #fff;} 
+
+.img-tip1{position:relative; width: 100%; height: 100%; background-color: transparent; box-sizing: border-box;}
+
+.img-tip1 a::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%; 
+    background: url(../img/thumbs/viewimage.png) center no-repeat, linear-gradient(to top, rgb(47, 47, 47), transparent);
+    background-size: 80%;
+    border-radius: 20px;
+    opacity: 0;
+    /*transform: scale(2);*/
+    z-index: 1;
+    transition: .5s;
+   /* transform: scale(0);*/
+}
+
+.img-tip1 a:hover::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*.imgworks p, h2{position: relative;}*/
+
+
+/*---------------RECENT WORKS - SEC-FORM--------------------------------------------------------------------------*/
+.sec-form h1{margin-top: 5%;}
+.sec-form p{text-indent: 5%; text-align: justify; line-height: 1.8em;}
+.form-btn{margin-top: 5%; width: 20%; padding: 3% 0;}
+
+.add{margin: 5% 0 0 0; font-size: 0.9em;}
+.add p{display: inline; margin-left: 2%;}
+
+
+/*---------------LISTAS CODE BLOCKCOTE SUB SUP B EM STRONG-------------------------------------------*/
+.sec-elements h1{margin-top: 5%;}
+.sec-elements p{line-height: 1.8em;}
+
+code{padding: 5px; background-color: rgb(241, 241, 241); border: 1px solid rgb(175, 175, 175); border-radius: 5px; font-family:'Courier New', Courier, monospace;}
+pre code{display: block;}
+blockquote{border-left: 5px solid #9c9c9c; margin: 2em 0; padding: .5em 0 .5em 1.5em; font-size: 1.2em;}
+q{border-left: 5px solid #9c9c9c; margin: 2em 0; padding: .5em 0 .5em 1.5em; font-size: 1.2em;}
+
+.sec-elements h3{color: yellowgreen;}
+.ul-alter li {border-bottom: 1px solid rgb(163, 163, 163); list-style: none; line-height: 2em;}
+.ul-alter li:last-child{border-bottom: none;}
+
+.icons li{display: inline-block; list-style: none; margin-right: 2%; color:rgb(136, 136, 136); font-size: 2em;}
+
+.d{margin: 2% 0 2% 0;}
+.def1{background-color:rgb(124, 146, 0); color: #fff; width: 15%; text-align: center;}
+.def1:hover{background-color:rgb(122, 122, 122); color: #fff;}
+
+.def2{width: 15%; text-align: center;}
+.small{padding: 1%;}
+
+.table{ width: 100%; margin: 0 0 2em 0; border-collapse: collapse;  text-align: left;}
+.table td{padding: .8em;}
+.table th{background-color: rgb(197, 197, 197); padding:.8em;}
+.table tbody tr td{border-bottom: 1px solid #ccc;}
+.table tbody tr:first-child td{border-top: 2px solid rgb(124, 124, 124);}
+.table tbody tr:last-child td{border-bottom: 2px solid rgb(124, 124, 124);}
+.table tbody tr:nth-child(even) td{background-color: rgb(236, 236, 236);}
+
+.table-alternate tbody td, .table-alternate tbody tr:first-child td, .table-alternate tbody tr:last-child td{border: 1px solid #ccc}
+
+
+/************************forms 2 ************************************/
+.formtitle{margin-top: 5%;}
+input[type="radio"], input[type="checkbox"]{width: auto; margin: 0 2% 0 0;}
+.radiobtn label{width:25%; font-size: 1.2em;}
+.radiobtn label{width:25%; font-size: 1.2em;}
+
+.btngen{padding:2% 1%; margin: 2% 2% 0 0;}
+
+
+/************************SEC IMAGENS************************************/
+
+.sec-imagens h2{margin-top: 5%;}
+
+.gallery-img img{width: 100%; margin: 0 0 2% 0;}
+.coll-1-3{width: 32%; float: left;}
+.coll-1-3:nth-child(3n -1){margin: 0 2%;}
+.gallery-thumb img{margin-bottom: 2%; border-radius: 7px;}
+
+
+/************************SEC IMAGENS************************************/
+
+.page-final{width: 100%; overflow: auto; }
+.img-left {float: left; margin: 0 1% 1% 0;}
+.img-right{float: right; margin: 0 1% 1% 0;}
