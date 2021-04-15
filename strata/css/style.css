@@ -16,7 +16,7 @@ select{padding: 2%; border:1px solid rgb(228, 228, 228); border-radius: 10px; ba
 label{margin: 3% 0 2% 0;}
 
 /*-----sistema de GRID-----//////////////////////////////////////////////////////////////////////////////////////***/
-.row{/*overflow: auto;*/ box-sizing: border-box; margin: 0;}
+.row{overflow-y: auto; box-sizing: border-box; margin: 0;}
 .col-1{width: 98.5%; clear: both; margin-top: 30px;}
 .col-2{width: 48.5%; float: left;}
 .col-2:first-child{margin-right: 1.5%;}
@@ -166,8 +166,8 @@ input[type="radio"], input[type="checkbox"]{width: auto; margin: 0 2% 0 0;}
         display: inline-block;
         margin-top: 50px;
         margin-left: 28%;
-        /*bottom: 5%; 
-        right: 32%;*/
+        bottom: 5%; 
+        right: 15%;
     }
     .main-content{
         width: 100%;
@@ -189,8 +189,8 @@ input[type="radio"], input[type="checkbox"]{width: auto; margin: 0 2% 0 0;}
         display: inline-block;
         margin-top: 50px;
         margin-left: 28%;
-        /*bottom: 5%; 
-        right: 32%;*/
+        bottom: 5%; 
+        right: 15%;
     }
     .main-content{
         width: 100%;
